@@ -4,34 +4,22 @@
   <meta charset="UTF-8">
   <title>9장 과제</title>
   <script>
-    function cminchfeet() {
-      let cm = prompt("cm를 입력하세요");
-      let inch = cm / 2.54;
-      let feet = cm / 30.48;
-      alert(cm + "cm = " + inch + "인치 / " + feet + "피트");
-    }
+    let cm = prompt("cm를 입력하세요");
+    let inch = cm / 2.54;
+    let feet = cm / 30.48;
+    alert(cm + "cm = " + inch + "인치 / " + feet + "피트");
 
-    function cylindervolume() {
-      let radius = prompt("반지름을 입력하세요");
-      let height = prompt("높이를 입력하세요");
-      let volume = Math.PI * radius * radius * height;
-      alert("원기둥 부피 = " + volume);
-    }
+    let radius = prompt("반지름을 입력하세요");
+    let height = prompt("높이를 입력하세요");
+    let volume = Math.PI * radius * radius * height;
+    alert("원기둥 부피 = " + volume);
 
-    function numberdigits() {
-      let number = prompt("네자리 정수를 입력하세요", "입력");
-
-      let thousand = parseInt(number / 1000);
-      let hundred = parseInt(number % 1000 / 100);
-      let ten = parseInt(number % 100 / 10);
-      let one = parseInt(number % 10);
-
-      alert("천의 자리 = " + thousand + ", 백의 자리 = " + hundred + ", 십의 자리 = " + ten + ", 일의 자리 = " + one);
-    }
-
-    cminchfeet();
-    cylindervolume();
-    numberdigits();
+    let number = prompt("네자리 정수를 입력하세요", "입력");
+    let thousand = parseInt(number / 1000);
+    let hundred = parseInt(number % 1000 / 100);
+    let ten = parseInt(number % 100 / 10);
+    let one = parseInt(number % 10);
+    alert("천의 자리 = " + thousand + ", 백의 자리 = " + hundred + ", 십의 자리 = " + ten + ", 일의 자리 = " + one);
   </script>
 </head>
 <body>
