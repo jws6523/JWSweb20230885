@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM 실습</title>
+</head>
+<body>
+  <h1 id="title">처음 제목입니다.</h1>
+  <button id="chabutton">제목 바꾸기</button>
+  <hr>
+
+  <h1 id="title2">스타일 변경 예제</h1>
+  <button id="stybutton">스타일 바꾸기</button>
+  <hr>
+
+  <h1>이미지 속성 변경</h1>
+  <img id="image" alt="이미지가 여기에 표시됩니다.">
+  <br><br>
+  <button id="imgbutton">이미지 보이기</button>
+
+  <script>
+
+
+    let title = document.getElementById("title");
+    let button = document.getElementById("chabutton");
+
+    button.onclick = function () {
+      title.textContent = "JavaScript로 제목을 바꿨습니다.";
+    };
+
+    let title2 = document.getElementById("title2");
+    let button2 = document.getElementById("stybutton");
+
+    button2.onclick = function () {
+      title2.style.color = "white";
+      title2.style.backgroundColor = "blue";
+      title2.style.padding = "10px" ;
+    }
+    
+    let image = document.getElementById("image");
+    let button3 = document.getElementById("imgbutton");
+
+    button3.onclick = function () {
+      image.src = "https://placehold.co/300x200";
+      image.width = 300;
+      image.height = 200;
+    };
+  </script>
+</body>
+</html>
